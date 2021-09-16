@@ -1,0 +1,11 @@
+package ch08;
+
+public class LottoNumber {
+
+	final int LOTTTO_NUMBER_SIZE = 6;
+	public int[] getLottoNuber() {
+		
+		// 번호를 담을 공간 만들기
+		int[] numbers = new int[LOTTTO_NUMBER_SIZE];
+	}
+}

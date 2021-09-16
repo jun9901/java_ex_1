@@ -1,0 +1,13 @@
+package ch04;
+
+import java.util.Calendar;
+
+public class CalendarMainTest {
+
+	public static void main(String[] args) {
+		
+		// Calendar란 날짜 관련 인스턴스입니다. 달력이나 시간 계산등을 사용할 때 많이 쓰는 인스턴스입니다.
+		Calendar calendar = Calendar.getInstance();
+	}
+
+}

@@ -1,0 +1,32 @@
+package ch03;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class Activity1 extends BaseActivity  {
+
+	CallbackCheckPosition callbackCheckPosition = new CallbackCheckPosition() {
+		
+		@Override
+		public void checkPosition(int x, int y) {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+	
+	public Activity1(String name) {
+		super(name);
+	}
+
+	@Override
+	public void setInitLayout() {
+		super.setInitLayout();
+		panel.setBackground(Color.blue);
+	}
+	
+	@Override
+	public void addEventListener() {
+	}
+
+}

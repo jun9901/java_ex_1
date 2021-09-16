@@ -1,0 +1,30 @@
+package ch05;
+
+import javax.swing.JFrame;
+
+public class PhoneBook extends JFrame{
+
+	InputPhoneNumber inputPhoneNumber;
+	
+	public PhoneBook() {
+		initData();
+		setInitLayout();
+		addEventListnere();
+	}
+
+	private void initData() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void setInitLayout() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void addEventListnere() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

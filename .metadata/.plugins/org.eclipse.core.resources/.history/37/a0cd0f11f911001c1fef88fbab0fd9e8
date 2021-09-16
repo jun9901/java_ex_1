@@ -1,0 +1,40 @@
+package ch05;
+
+import java.awt.GridLayout;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+
+public class PhoneBook extends JFrame{
+
+	InputPhoneNumber inputPhoneNumber;
+	
+	public PhoneBook() {
+		inputPhoneNumber = new InputPhoneNumber();
+		inputPhoneNumber.savePhoneNumber();
+		
+		initData();
+		setInitLayout();
+		addEventListnere();
+	}
+
+	private void initData() {
+		setTitle("Phone Book");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setSize(500, 500);
+		
+	}
+
+	private void setInitLayout() {
+		ArrayList<String> name = inputPhoneNumber.getUserName();
+		ArrayList<String> tel = inputPhoneNumber.getTelNumber();
+		setLayout(new GridLayout(name.size(), 2));
+		
+	}
+
+	private void addEventListnere() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

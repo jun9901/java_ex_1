@@ -1,0 +1,20 @@
+package ch02;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class FileInputStreamTest1 {
+
+	public static void main(String[] args) {
+		try {
+			FileInputStream fis = new FileInputStream("assets/input.txt");
+			System.out.println((char)fis.read());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("end : 프로그램 다운안됨!");
+	}
+
+}

@@ -1,0 +1,21 @@
+package ch03;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileOutputStreamTest2 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		FileOutputStream fos = new FileOutputStream("output2.txt", false);
+		
+		// java 9부터 제공되는 기술
+		try(fos){
+			
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+	}
+
+}

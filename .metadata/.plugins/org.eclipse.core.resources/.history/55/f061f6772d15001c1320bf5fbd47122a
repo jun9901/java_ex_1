@@ -1,0 +1,31 @@
+package ch02;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class HttpMainTest1 {
+
+	public static void main(String[] args) {
+
+		try {
+			URL url = new URL("https://jsonplaceholder.typicode.com/todos/1");
+			HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+			
+			connection.setRequestMethod("GET");
+			connection.setRequestProperty("Content-tpye", "application/json");
+			connection.connect();
+			
+			int statusCode = connection.getResponseCode();
+			
+			System.out.println("statusCode :" + statusCode);
+			
+			
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+		}
+	}
+
+}

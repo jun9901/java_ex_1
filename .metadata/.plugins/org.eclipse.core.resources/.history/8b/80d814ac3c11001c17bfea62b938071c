@@ -1,0 +1,11 @@
+package ch03;
+
+import javax.swing.JFrame;
+
+public class MainTest extends JFrame {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package ch02;
+
+public class Users {
+
+	int id;
+	String name;
+	String userName;
+	String email;
+	String phone;
+	String website;
+
+	Geo geo;
+	
+	public Users() {
+		Address address = new Address();
+		Company	company = new Company();
+	}
+}
+
+class Address{
+	String street;
+	String suite;
+	String city;
+	String zipcode;
+}
+
+class Company{
+	String name;
+	String catchPhrase;
+	String bs;
+	
+}
+class Geo {
+	String lat;
+	String lng;
+}

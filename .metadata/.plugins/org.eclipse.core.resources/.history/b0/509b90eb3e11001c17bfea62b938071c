@@ -1,0 +1,37 @@
+package ch03;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class Activity1 extends BaseActivity {
+
+	public Activity1(String name) {
+		this.name = name;
+		initData();
+		setInitLayout();
+		addEventListener();
+		
+	}
+	
+	@Override
+	public void initData() {
+		setTitle(name);
+		setSize(500, 500);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		panel = new JPanel();
+		
+	}
+	
+	@Override
+	public void setInitLayout() {
+		setVisible(true);
+		add(panel);
+		panel.setBackground(Color.blue);
+	}
+	
+	@Override
+	public void addEventListener() {
+	}
+	
+}

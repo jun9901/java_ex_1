@@ -1,0 +1,12 @@
+package ch03;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class BaseActivity extends JFrame {
+
+	String name;
+	JPanel panel;
+	
+	
+}

@@ -1,0 +1,76 @@
+package ch07;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MainTest2 {
+
+	public static void main(String[] args) {
+		new MyFrameEx1();
+	}
+
+}
+
+class MyFrameEx1 extends JFrame {
+	
+	MyPanel myPanel;
+	BorderLayout borderLayout;
+	JButton button;
+	
+	public MyFrameEx1() {
+		iniData();
+		setInitLayout();
+		addEventListener();
+		
+	}
+
+	// 보더 레이아웃 클릭 
+	private void iniData() {
+		setTitle("로또 번호 생성기");
+		setSize(600, 400);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		myPanel = new MyPanel();
+		borderLayout = new BorderLayout();
+		button = new JButton("클릭");
+		add(button , borderLayout.NORTH);
+		
+	}
+
+	private void setInitLayout() {
+		setVisible(true);
+		setBackground(Color.gray);
+		add(myPanel);
+		
+		
+	}
+	
+	private void addEventListener() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	private class MyPanel extends JPanel {
+		@Override
+		public void paint(Graphics g) {
+			
+			Font font = new Font("궁서체", Font.BOLD, 20);
+			g.setFont(font);
+			g.drawString("로또 버튼을 클릭하세요", 180, 180);
+		}
+	}
+	private class MyMouseListender extends MouseAdapter {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			
+		}
+	}
+	
+}

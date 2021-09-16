@@ -1,0 +1,14 @@
+package ch09;
+
+import java.awt.image.BufferedImage;
+
+import javax.swing.JFrame;
+
+public class Play1945 extends JFrame{
+
+	BufferedImage bgImage1;
+	BufferedImage bgImage2;
+	
+	final int WIDTH_SIZE = 600;
+	
+}

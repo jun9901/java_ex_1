@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ch01.DatastructureTest1&apos; to &apos;DataStructureTest1&apos;&#x0D;&#x0A;- Original project: &apos;data_structure_ex&apos;&#x0D;&#x0A;- Original element: &apos;ch01.DatastructureTest1&apos;&#x0D;&#x0A;- Renamed element: &apos;ch01.DataStructureTest1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DatastructureTest1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ch01{DatastructureTest1.java[DatastructureTest1" matchStrategy="1" name="DataStructureTest1" qualified="false" references="true" similarDeclarations="false" stamp="1631598062904" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,42 @@
+package ch03;
+
+import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JPanel;
+
+public class Activity2 extends BaseActivity implements CallbackCheckPosition {
+
+	public Activity2(String name) {
+		this.name = name;
+		initData();
+		setInitLayout();
+		addEventListener();
+		
+	}
+	
+	@Override
+	public void setInitLayout() {
+		super.setInitLayout();
+		panel.setBackground(Color.yellow);
+	}
+	
+	@Override
+	public void addEventListener() {
+		this.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				int x = e.getX();
+				int y = e.getY();
+				checkPosition(x, y);
+			}
+		});
+	}
+	
+	@Override
+	public void checkPosition(int x, int y) {
+		
+	}
+	
+}

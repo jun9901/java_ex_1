@@ -1,0 +1,47 @@
+package ch02;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+
+public class HttpMainTest1 {
+
+	public static void main(String[] args) {
+
+		try {
+			URL url = new URL("https://jsonplaceholder.typicode.com/todos/10");
+			HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+			
+			connection.setRequestMethod("GET");
+			connection.setRequestProperty("Content-tpye", "application/json");
+			connection.connect();
+			
+			int statusCode = connection.getResponseCode();
+			
+			System.out.println("statusCode :" + statusCode);
+			
+			BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+			
+			StringBuffer sb = new StringBuffer();
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				sb.append(line);
+			}
+			
+			String str = sb.toString();
+			System.out.println(str);
+			
+			
+			
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+		}
+	}
+
+}

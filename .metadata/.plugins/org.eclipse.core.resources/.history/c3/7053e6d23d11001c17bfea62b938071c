@@ -1,0 +1,30 @@
+package ch03;
+
+public class Activity2 extends BaseActivity {
+
+	public Activity2(String name) {
+		this.name = name;
+		initData();
+		setInitLayout();
+		addEventListener();
+		
+	}
+	
+	@Override
+	public void initData() {
+		// TODO Auto-generated method stub
+		super.initData();
+	}
+	
+	@Override
+	public void setInitLayout() {
+		// TODO Auto-generated method stub
+		super.setInitLayout();
+	}
+	
+	@Override
+	public void addEventListener() {
+		// TODO Auto-generated method stub
+		super.addEventListener();
+	}
+}

@@ -1,0 +1,25 @@
+package ch02;
+
+public class Users {
+
+	int id;
+	String name;
+	String userName;
+	String email;
+	String phone;
+	String website;
+	
+	class Address{
+		String street;
+		String suite;
+		String city;
+		String zipcode;
+		String geo;
+	}
+	
+	class Company{
+		String name;
+		String catchPhrase;
+		
+	}
+}
